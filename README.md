@@ -1,6 +1,6 @@
 Trabajo práctico final de Teoría de Computación, Universidad Nacional General Sarmiento, primer semestre 2024.
 
-![[consigna.pdf]]
+![Consigna del trabajo](Adjuntos/consigna.pdf)
 
 Este trabajo práctico tiene como objetivo desarrollar un simulador de máquinas de Turing. Este simulador debe ser capaz de tomar la definición de una máquina de Turing, ejecutarla con un _string_ de entrada y registrar cada uno de los movimientos en una base de datos para análisis posterior. Para la implementación, se utilizará _PostgreSQL_ con programación en _pl/pgsql_. Es esencial preparar el entorno adecuado y garantizar que todas las dependencias necesarias estén instaladas, incluyendo Docker para el manejo de contenedores donde se ejecutará _PostgreSQL_. A continuación, se describen los pasos para configurar el entorno necesario para este proyecto.
 
@@ -77,7 +77,7 @@ Cambia "pass" por una contraseña más segura para proteger tu base de datos.
 
 Esto habilita una conexión a una base de dato de postgres, podemos conectarnos con la siguiente información (yo uso Dbeaver para ver bases de datos):
 
-![[captura1.png]]
+![Captura base de datos](Adjuntos/captura1.png)
 
 Aclaración: El nombre de la base de la base de datos por defecto es: postgres. Debería ir ese nombre en su conexión la primera vez, luego si crea otra base de datos para esto, puede editar la conexión tal como se ve en la imagen.
 
@@ -124,18 +124,18 @@ Para definir esta función en la base de datos, se ejecuta el comando:
 
 Ejemplos de ejecución:
 
-![[esMultiploDe3.png]]
+![Captura 1](Adjuntos/esMultiploDe3.png)
 
 1. **`esPalindromo.sql`**: Este programa configura una máquina de Turing para verificar si una cadena de caracteres binarios es un palíndromo. La definición incluye los estados y las transiciones necesarias para comparar los caracteres desde ambos extremos de la cadena hacia el centro. Si la máquina de Turing termina en un estado final, la cadena es un palíndromo.
 
 Ejemplos de ejecuciones:
 
-![[esPalindromoFalse.png]]
+![Captura 2](Adjuntos/esPalindromoFalse.png)
 
-![[esPalindromoTrue.png]]
+![Captura 3](Adjuntos/esPalindromoTrue.png)
 
-1. **`inversorBinario.sql`**: Este programa implementa una máquina de Turing que invierte una cadena binaria. Utiliza estados y transiciones para leer la cadena de entrada y escribirla invertida en la cinta.
+3. **`inversorBinario.sql`**: Este programa implementa una máquina de Turing que invierte una cadena binaria. Utiliza estados y transiciones para leer la cadena de entrada y escribirla invertida en la cinta.
 
 Ejemplos de ejecución:
 
-![[inversorBinario.png]]
+![Captura 4](Adjuntos/inversorBinario.png)
